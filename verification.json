@@ -1,0 +1,127 @@
+{
+  "pages": {
+    "index.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "home-2.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "about.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "services.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "service-details.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "blog.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "blog-details.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "contact.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "booking.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "gallery.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "pricing.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "login.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "register.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "dashboard.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "404.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    },
+    "coming-soon.html": {
+      "one_h1": true,
+      "assets_and_links": true,
+      "labels": true,
+      "natural_image_dimensions": true,
+      "visible_wording": true
+    }
+  },
+  "shared_checks": [
+    "Three-color palette",
+    "Full-width layout with 30px side padding",
+    "Shared heading scale and paragraph line height",
+    "Shared header/footer and preference scripts",
+    "JavaScript syntax",
+    "Balanced CSS delimiters",
+    "Canonical and Open Graph metadata",
+    "Valid JSON-LD syntax"
+  ],
+  "limitation": "Visual viewport and browser interaction checks remain unverified because the required browser QA capability is unavailable."
+}

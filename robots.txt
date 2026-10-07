@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+# Owner-private preview. Set Allow: / after configuring the public production site.
+Sitemap: https://kindride-accessible-home.ezhil3013.chatgpt.site/sitemap.xml
