@@ -1,0 +1,2 @@
+/* Configure verified production integrations here; null means not connected. */
+window.KindrideIntegrations=Object.freeze({contactEndpoint:null,newsletterEndpoint:null,mapsApiKey:null,bookingEndpoint:null,availabilityEndpoint:null,stripePublishableKey:null,paypalClientId:null,trackingEndpoint:null,emailNotificationEndpoint:null,smsNotificationEndpoint:null,social:{facebook:null,instagram:null}});

@@ -1,0 +1,55 @@
+/* Five-step accessible request workflow. */
+.booking-hero{background-image:url('../images/backgrounds/booking-background.jpg')}
+.booking-page h1,.booking-page h2,.booking-page h3{overflow-wrap:anywhere}
+.booking-layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:40px;align-items:start}
+.booking-main{min-width:0}
+.booking-progress{display:flex;flex-wrap:wrap;gap:12px 24px;list-style:none;padding:0;margin:0 0 24px}
+.booking-progress li{padding-block:10px;border-bottom:2px solid transparent}
+.booking-progress [aria-current=step]{font-weight:700;border-color:var(--fg)}
+#booking-step-status{margin-bottom:24px}
+.booking-step{border:0;border-top:1px solid var(--line);padding:24px 0 0;min-width:0}
+.booking-step legend{float:none;width:auto;padding:0;font-family:Inter,sans-serif;font-size:var(--card-heading-size);font-weight:600;line-height:1.35;margin:0 0 20px}
+.booking-step>p{margin-bottom:24px}
+.booking-fields{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.booking-field{min-width:0}
+.booking-field label{display:block;font-weight:700;margin-bottom:10px}
+.booking-field input,.booking-field select,.booking-field textarea{width:100%;min-height:56px;border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:14px 16px;border-radius:0;font:inherit}
+.booking-field textarea{resize:vertical}
+#return-fields{display:grid;grid-template-columns:1fr 1fr;gap:24px;grid-column:1/-1}
+.booking-fields>.booking-field:last-child:has(textarea){grid-column:1/-1}
+.booking-actions{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-top:30px;border-top:1px solid var(--line);padding-top:24px}
+.booking-help{border-inline-start:1px solid var(--line);padding-inline-start:30px}
+.booking-help h2,.booking-help h3{font-size:var(--card-heading-size);line-height:1.35}
+.booking-help h3{margin-top:28px}
+.booking-help p:not(.eyebrow){margin-top:18px}
+.booking-help ul{padding-inline-start:24px;margin-block:18px}
+.booking-help li+li{margin-top:12px}
+.booking-help .text-link{display:block;min-height:48px;margin-top:14px}
+.booking-vehicle img{width:100%;height:auto;object-fit:contain}
+.booking-vehicle figcaption{font-size:.9rem;margin-top:12px}
+.booking-fit{margin:24px 0 0}
+.booking-fit>div{display:grid;grid-template-columns:1fr 2fr;gap:20px;padding-block:18px;border-top:1px solid var(--line)}
+.booking-fit dd{margin:0;overflow-wrap:anywhere;white-space:pre-wrap}
+.booking-check{display:grid;grid-template-columns:28px minmax(0,1fr);gap:14px;align-items:start;margin-top:24px;padding-block:12px}
+.booking-check input{width:24px;height:24px;accent-color:var(--primary);margin-top:4px}
+.booking-check label{min-height:48px;cursor:pointer}
+.booking-check .field-error{grid-column:2}
+.booking-payment-note{margin-top:24px}
+#booking-errors{margin-top:22px;font-weight:700}
+#booking-confirmation{border:1px solid var(--line);padding:28px;overflow-wrap:anywhere}
+#booking-confirmation h2{font-size:var(--section-heading-size)}
+#booking-confirmation>p{margin-top:20px}
+#booking-confirmation .btn{margin-top:24px}
+@media(max-width:1024px){.booking-layout{grid-template-columns:minmax(0,1fr);gap:28px}.booking-help{border-inline-start:0;border-top:1px solid var(--line);padding-inline-start:0;padding-top:24px}}
+@media(max-width:767px){.booking-fields,#return-fields{grid-template-columns:minmax(0,1fr);gap:18px}.booking-fit>div{grid-template-columns:minmax(0,1fr);gap:8px}.booking-actions{flex-direction:column}.booking-actions .btn{width:100%}.booking-progress{gap:6px 18px}#booking-confirmation{padding:24px}}
+
+/* Requested help and checklist are separate full-width sections. */
+.booking-layout{grid-template-columns:minmax(0,1fr)}
+.booking-help-section{border-block:1px solid var(--line);background:var(--primary);color:var(--white)}
+.booking-help-wide{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.booking-help-wide h2{font-size:var(--section-heading-size)}
+.booking-help-wide .text-link{display:block;margin-top:16px;min-height:48px}
+.booking-help-wide ul{margin:0;padding-inline-start:24px}
+.booking-help-wide li+li{margin-top:16px}
+.booking-help-section :focus-visible{outline-color:var(--white);box-shadow:none}
+@media(max-width:1024px){.booking-help-wide{grid-template-columns:minmax(0,1fr);gap:24px}}

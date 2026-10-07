@@ -1,0 +1,64 @@
+/* Services: open editorial rows, equipment feature and linear process. */
+.services-page h1,.services-page h2,.services-page h3{overflow-wrap:anywhere}
+.services-hero{background-image:url('../images/backgrounds/services-background.jpg')}
+.services-page h2{font-size:var(--section-heading-size)}
+.services-page .final-cta h2{font-size:clamp(2.5rem,4.8vw,5rem)}
+.service-directory{border-top:1px solid var(--line)}
+.service-row{display:grid;grid-template-columns:60px minmax(0,1fr) minmax(0,1fr);gap:30px;padding-block:32px;border-bottom:1px solid var(--line);align-items:start}
+.service-index{font-family:Inter,sans-serif;font-size:1.3rem;font-weight:600;line-height:1.35}
+.service-row h3,.boarding-list dt,.process-list h3{font-size:var(--card-heading-size);line-height:1.35}
+.service-category{display:block;font-family:Inter,sans-serif;font-size:.8rem;letter-spacing:.04em;margin-top:16px}
+.service-row .text-link{margin-top:14px;min-height:48px}
+.service-boarding{padding-block:40px;background:var(--primary);color:var(--white);--line:var(--white)}
+.boarding-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.boarding-layout figure{min-width:0}
+.boarding-layout img{width:100%;height:auto;object-fit:contain}
+.boarding-layout figcaption{margin-top:12px;font-size:.9rem}
+.boarding-layout h2+p{margin-top:22px}
+.boarding-list{margin:26px 0 0}
+.boarding-list>div{padding-block:18px;border-top:1px solid var(--white)}
+.boarding-list dt{font-weight:600}
+.boarding-list dd{margin:10px 0 0}
+.service-process>.container{display:grid;grid-template-columns:1fr 1.25fr;gap:50px}
+.process-intro>p:last-child{margin-top:22px;max-width:620px}
+.process-list{list-style:none;counter-reset:journey;margin:0;padding:0;border-top:1px solid var(--line)}
+.process-list li{counter-increment:journey;position:relative;padding-block:28px;padding-inline-start:70px;border-bottom:1px solid var(--line)}
+.process-list li::before{content:'0' counter(journey);position:absolute;inset-inline-start:0;top:28px;font-family:Inter,sans-serif;font-size:1.3rem;font-weight:600}
+.process-list p{margin-top:14px}
+.service-questions{padding-top:0}
+.service-disclosures{border-top:1px solid var(--line)}
+.service-disclosures details{border-bottom:1px solid var(--line);padding-block:22px}
+.service-disclosures summary{font-family:Inter,sans-serif;font-size:1.2rem;font-weight:600;cursor:pointer;min-height:48px;line-height:1.5;padding-block:8px}
+.service-disclosures p{max-width:1000px;margin-top:16px}
+@media(max-width:1024px){
+ .service-row{grid-template-columns:45px minmax(0,1fr);gap:18px 24px}
+ .service-row>div:last-child{grid-column:2}
+ .boarding-layout,.service-process>.container{grid-template-columns:minmax(0,1fr);gap:28px}
+}
+@media(max-width:767px){
+ .service-row{padding-block:26px;grid-template-columns:30px minmax(0,1fr);gap:16px}
+ .service-row h3,.process-list h3{font-size:1.3rem}
+ .service-category{margin-top:12px}
+ .service-boarding{padding-block:30px}
+ .process-list li{padding-inline-start:46px;padding-block:24px}
+ .process-list li::before{top:24px}
+ .service-disclosures summary{font-size:1.1rem}
+}
+
+/* Fill the planning column with a useful preparation checklist. */
+.process-intro{display:flex;flex-direction:column;align-self:stretch}
+.process-preparation{margin-top:28px;border-top:1px solid var(--line);padding-top:24px}
+.process-preparation h3{font-size:var(--card-heading-size);line-height:1.35}
+.process-preparation ul{padding-inline-start:24px;margin-block:18px}
+.process-preparation li+li{margin-top:12px}
+.process-preparation p{margin-top:16px}
+
+/* Compact open service rows and align boarding equipment with its text. */
+.service-row>div:last-child{display:flex;flex-wrap:wrap;align-content:start;gap:12px 24px}
+.service-row>div:last-child>p{flex-basis:100%}
+.service-row .text-link{margin-top:0}
+.boarding-layout{align-items:stretch}
+.boarding-layout figure{display:flex;flex-direction:column;margin:0;height:100%}
+.boarding-layout img{flex:1;min-height:0;height:0;width:100%;object-fit:cover;object-position:center}
+.boarding-layout figcaption{flex-shrink:0}
+@media(max-width:1024px){.boarding-layout figure{height:auto}.boarding-layout img{flex:none;height:auto;object-fit:contain}}

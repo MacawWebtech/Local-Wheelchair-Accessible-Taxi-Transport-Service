@@ -1,0 +1,1 @@
+(() => {const root=document.documentElement;root.dataset.text='normal';try {root.dataset.theme=localStorage.getItem('kindride-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');root.dir=localStorage.getItem('kindride-dir')||'ltr';localStorage.removeItem('kindride-text');}catch{}})();

@@ -1,0 +1,1 @@
+(() => {const button=document.querySelector('#copy-article');if(!button)return;button.addEventListener('click',async()=>{const status=document.querySelector('#share-status');try{await navigator.clipboard.writeText(location.href);status.textContent='Article link copied.';}catch{status.textContent='Copy this article link: '+location.href;}});})();

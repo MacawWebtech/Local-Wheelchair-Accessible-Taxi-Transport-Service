@@ -1,0 +1,44 @@
+/* Pricing: a clear quote table and open cost explanations. */
+.pricing-hero{background-image:url('../images/backgrounds/pricing-background.jpg')}
+.pricing-page h1,.pricing-page h2,.pricing-page h3{overflow-wrap:anywhere}
+.pricing-page h2{font-size:var(--section-heading-size)}
+.pricing-page .final-cta h2{font-size:clamp(2.5rem,4.8vw,5rem)}
+.pricing-table{width:100%;border-collapse:collapse;font-size:1rem}
+.pricing-table caption{caption-side:top;text-align:start;color:var(--fg);padding-block:0 20px}
+.pricing-table th,.pricing-table td{text-align:start;vertical-align:top;border:1px solid var(--line);padding:24px;overflow-wrap:anywhere}
+.pricing-table thead{background:var(--primary);color:var(--white)}
+.pricing-table th:first-child{width:27%}
+.pricing-links{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px}
+.pricing-split{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;align-items:start}
+.pricing-split>div>p:not(.eyebrow){margin-top:22px}
+.pricing-split .text-link{margin-top:20px;min-height:48px}
+.pricing-inclusions{padding-block:44px;background:var(--primary);color:var(--white)}
+.pricing-definition{margin:0}
+.pricing-definition>div{padding-block:20px;border-top:1px solid var(--white)}
+.pricing-definition dt{font-family:Inter,sans-serif;font-size:var(--card-heading-size);font-weight:600;line-height:1.35}
+.pricing-definition dd{margin:14px 0 0}
+.pricing-charges{list-style:none;padding:0;margin:0}
+.pricing-charges li{padding-block:24px;border-top:1px solid var(--line)}
+.pricing-charges h3{font-size:var(--card-heading-size);line-height:1.35}
+.pricing-charges p{margin-top:14px}
+.pricing-faq{padding-top:0}
+@media(max-width:1024px){.pricing-split{grid-template-columns:minmax(0,1fr);gap:28px}.pricing-table th,.pricing-table td{padding:18px}}
+@media(max-width:767px){.pricing-table th,.pricing-table td{padding:14px 10px}.pricing-table th:first-child{width:26%}.pricing-links{flex-direction:column}.pricing-links .btn{width:100%}.pricing-inclusions{padding-block:34px}}
+
+/* Vehicle quote slideshow, with natural images and balanced copy. */
+.vehicle-slide{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:30px;align-items:stretch;border:1px solid var(--line)}
+.vehicle-slide figure{display:flex;flex-direction:column;min-width:0}.vehicle-slide img{width:100%;height:auto;object-fit:contain;margin-block:auto}.vehicle-slide figcaption{padding:16px 24px;border-top:1px solid var(--line)}
+.vehicle-price-copy{padding:30px;display:flex;flex-direction:column;gap:20px;min-width:0}.vehicle-price-copy h3{font-size:var(--card-heading-size)}.vehicle-price-copy dl{margin:0;border-block:1px solid var(--line);padding-block:20px}.vehicle-price-copy dd{margin:10px 0 0;font-family:Inter,sans-serif;font-size:1.5rem;font-weight:700}.vehicle-price-copy .btn{margin-top:auto;align-self:flex-start;white-space:normal}
+.vehicle-slide-controls{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:24px}.vehicle-slide-controls p{text-align:center}
+@media(prefers-reduced-motion:no-preference){.vehicle-slide.is-entering{animation:vehicle-in .4s ease both}@keyframes vehicle-in{from{opacity:.5;transform:translateX(12px)}to{opacity:1;transform:translateX(0)}}}
+@media(max-width:1024px){.vehicle-slide{grid-template-columns:minmax(0,1fr)}.vehicle-price-copy{padding:24px}.vehicle-slide img{margin:0}}
+@media(max-width:767px){.vehicle-slide-controls{flex-wrap:wrap;gap:16px}.vehicle-slide-controls p{order:-1;width:100%}.vehicle-slide-controls .btn{flex:1;padding-inline:16px}.vehicle-price-copy .btn{width:100%}}
+
+/* Balance quote introductions against the adjacent explanation lists. */
+.pricing-split>div:first-child{display:flex;flex-direction:column;align-self:stretch;min-width:0}
+.pricing-split>div:first-child>.text-link:last-child{margin-top:auto;padding-top:24px}
+.pricing-split>div:first-child>p:not(.eyebrow){max-width:65ch}
+@media(max-width:1024px){.pricing-split>div:first-child>.text-link:last-child{margin-top:16px;padding-top:0}}
+
+/* Center the quote and ride-request buttons shown in the screenshot. */
+.pricing-links{justify-content:center;align-items:center}

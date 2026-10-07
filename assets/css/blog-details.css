@@ -1,0 +1,46 @@
+/* Article layout with an open navigation sidebar, no repeated card grid. */
+.blog-detail-page h1,.blog-detail-page h2,.blog-detail-page h3{overflow-wrap:anywhere}
+.article-hero{background-image:url('../images/backgrounds/blog-details-background.jpg')}
+.blog-detail-page h2{font-size:var(--section-heading-size)}
+.blog-detail-page .final-cta h2{font-size:clamp(2.5rem,4.8vw,5rem)}
+.article-layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:50px;padding-block:50px;align-items:start}
+.travel-article{min-width:0}
+.article-intro{border:0;background:transparent}
+.travel-article p{max-width:1050px;margin-top:22px}
+.article-photo{margin-top:30px}
+.article-photo img{width:100%;height:auto;object-fit:contain}
+.article-photo figcaption{font-size:.9rem;margin-top:12px}
+.travel-article section{border-top:1px solid var(--line);padding-top:32px;margin-top:32px}
+.travel-article section>.eyebrow{margin-top:0}
+.travel-article ul{padding-inline-start:24px;margin-block:22px 0}
+.travel-article li+li{margin-top:12px}
+.travel-article blockquote{border-inline-start:4px solid var(--primary);padding-inline-start:24px;margin:28px 0 0;font-size:1.2rem;font-weight:700}
+.article-facts{margin:24px 0 0}
+.article-facts>div{display:grid;grid-template-columns:140px minmax(0,1fr);gap:20px;border-top:1px solid var(--line);padding-block:18px}
+.article-facts dd{margin:0}
+.travel-article .text-link{margin-top:18px;min-height:48px}
+.article-end{border-block:1px solid var(--line);padding-block:28px;margin-top:32px}
+.article-end h3,.article-sidebar h3{font-size:var(--card-heading-size);line-height:1.35}
+.article-sidebar{border-inline-start:1px solid var(--line);padding-inline-start:30px}
+.article-sidebar>div+div{margin-top:28px;padding-top:28px;border-top:1px solid var(--line)}
+.article-sidebar nav{display:flex;flex-direction:column;align-items:stretch;gap:4px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:1rem}
+.article-sidebar nav a{display:block;min-height:48px;padding-block:12px;text-decoration:underline}
+.article-sidebar p:not(.eyebrow){margin-top:16px}
+.article-sidebar .text-link{display:block;min-height:48px;margin-top:12px}
+@media(max-width:1024px){.article-layout{grid-template-columns:minmax(0,1fr);gap:32px;padding-block:40px}.article-sidebar{border-inline-start:0;border-top:1px solid var(--line);padding-inline-start:0;padding-top:28px}}
+@media(max-width:767px){.article-layout{padding-block:30px}.article-facts>div{grid-template-columns:minmax(0,1fr);gap:8px}.travel-article section{padding-top:26px;margin-top:26px}.article-sidebar h3,.article-end h3{font-size:1.3rem}}
+
+/* Full-width guide sections and closing navigation; retain the introduction/sidebar. */
+.article-layout>.travel-article{display:contents}
+.article-layout .article-intro{grid-column:1;grid-row:1;min-width:0}
+.article-layout .article-photo{grid-column:1;grid-row:2;min-width:0;margin-top:0}
+.article-layout>.article-sidebar{grid-column:2;grid-row:1 / span 2;min-width:0}
+.article-layout .travel-article>section,
+.article-layout .travel-article>.article-end{grid-column:1 / -1;width:100%;min-width:0;margin-top:0}
+.article-layout .travel-article>section>p,
+.article-layout .travel-article>.article-end>p{max-width:none}
+.article-layout .article-pagination,.article-layout .article-share{display:flex;align-items:center;flex-wrap:wrap;gap:16px 24px;margin-top:24px}
+.article-layout .article-share>p{margin-top:0}
+@media(max-width:1024px){
+ .article-layout .article-intro,.article-layout .article-photo,.article-layout>.article-sidebar{grid-column:1 / -1;grid-row:auto}
+}

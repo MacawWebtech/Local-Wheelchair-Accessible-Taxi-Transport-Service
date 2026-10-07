@@ -1,0 +1,147 @@
+/* Home Page 2 only: appointment-day planning layout. */
+.home-two h1,.home-two h2,.home-two h3{overflow-wrap:anywhere}
+.h2-hero{background:var(--primary);color:var(--white);padding:60px 0 0;text-align:center}
+.h2-hero h1{font-size:clamp(3rem,6.8vw,6.5rem);line-height:1.04;letter-spacing:-.06em;max-width:1100px;margin-inline:auto}
+.h2-hero-description{font-size:1.2rem;max-width:790px;margin:26px auto}
+.h2-hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.h2-white{background:var(--white);color:var(--primary);border-color:var(--white)}
+.h2-white:hover{color:var(--primary)}
+.h2-hero-call{background:var(--primary);color:var(--white);border-color:var(--white)}
+.h2-hero :focus-visible{outline-color:var(--white);box-shadow:none}
+.h2-hero-foot{border-top:1px solid var(--white);display:flex;justify-content:space-between;gap:20px;padding-block:20px;margin-top:50px;text-align:start}
+.h2-day{border-bottom:1px solid var(--line);padding-block:36px}
+.h2-day>.container{display:grid;grid-template-columns:.85fr 2fr;gap:40px;align-items:start}
+.h2-day-heading h2{font-size:clamp(1.6rem,2.5vw,2.5rem)}
+.h2-day-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.h2-number{display:block;font-family:Inter,sans-serif;font-size:1.3rem;font-weight:600;margin-bottom:18px}
+.h2-day-track h3{font-size:var(--card-heading-size);margin-bottom:12px}
+.h2-section-intro{max-width:1000px;margin-bottom:34px}
+.h2-section-intro h2,.h2-passenger-copy h2,.h2-planner h2,.h2-final h2{font-size:var(--section-heading-size)}
+.h2-section-intro>p:last-child:not(.eyebrow){margin-top:20px;max-width:800px}
+.h2-routine-list{border-top:1px solid var(--line)}
+.h2-routine-list details{border-bottom:1px solid var(--line)}
+.h2-routine-list summary{display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:24px;list-style:none;padding-block:28px;cursor:pointer;min-height:75px;font-family:Inter,sans-serif;font-size:clamp(1.1rem,2.3vw,2rem);font-weight:500;line-height:1.3}
+.h2-routine-list summary::-webkit-details-marker{display:none}
+.h2-routine-index{font-size:1rem}
+.h2-expand{font-family:'Atkinson Hyperlegible',sans-serif;font-size:1rem;text-decoration:underline;text-underline-offset:4px}
+.h2-routine-list details[open] .h2-expand::after{content:' — expanded'}
+.h2-routine-body{padding:0 0 24px;padding-inline-start:94px;max-width:1000px}
+.h2-routine-body .text-link{margin-top:12px;min-height:48px}
+.h2-passenger-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;border-block:1px solid var(--line);padding-block:32px}
+.h2-passenger img{width:100%;height:auto;object-fit:contain}
+.h2-passenger figcaption{font-size:.9rem;margin-top:12px}
+.h2-passenger-copy>p:not(.eyebrow){margin-top:22px}
+.h2-passenger-copy ul{padding-inline-start:24px;margin-block:22px 0}
+.h2-passenger-copy li+li{margin-top:12px}
+.h2-copy-end{padding-top:18px;border-top:1px solid var(--line)}
+.h2-equipment-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.h2-equipment figure{border:1px solid var(--line)}
+.h2-equipment img{height:auto;width:100%;object-fit:contain}
+.h2-equipment figcaption{border-top:1px solid var(--line);padding:24px}
+.h2-equipment h3{font-size:var(--card-heading-size);margin-bottom:12px}
+.h2-planner{background:var(--black);color:var(--white);--bg:var(--black);--fg:var(--white);--line:var(--white);padding-block:50px;color-scheme:dark}
+.h2-planner-heading{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:30px}
+.h2-planner-heading>p{max-width:600px}
+.h2-planner-disclosure{border:1px solid var(--white)}
+.h2-planner-disclosure>summary{padding:24px;min-height:70px;cursor:pointer;font-weight:700;font-size:1.2rem}
+.h2-planner-disclosure>summary>span{font-size:1rem;font-weight:400;margin-inline-start:20px}
+.h2-planner-disclosure form{padding:24px;border-top:1px solid var(--white)}
+.h2-planner-note{margin-top:20px;max-width:800px}
+.h2-answer-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-inline-start:1px solid var(--line)}
+.h2-answer-grid details{border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px}
+.h2-answer-grid summary{font-weight:700;font-size:1.1rem;cursor:pointer;min-height:48px}
+.h2-answer-grid details p{margin-top:16px}
+.home-two #faq{padding-block:60px}
+.h2-final{border-block:1px solid var(--line);padding-block:44px}
+.h2-final>.container{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.h2-final p:last-child{margin-top:20px}
+@media(max-width:1024px){
+ .h2-hero{padding-top:42px}
+ .h2-hero h1{font-size:clamp(2.8rem,7vw,4.6rem)}
+ .h2-day>.container{grid-template-columns:1fr;gap:28px}
+ .h2-day-heading h2 br{display:none}
+ .h2-day-track{gap:24px}
+ .h2-passenger-grid{grid-template-columns:1fr;gap:26px}
+ .h2-planner-heading{grid-template-columns:1fr;gap:20px}
+ .h2-planner-heading>p{max-width:none}
+ .h2-equipment figcaption{padding:20px}
+}
+@media(max-width:767px){
+ .h2-hero{padding-top:36px}
+ .h2-hero h1{font-size:clamp(2.6rem,8vw,4rem)}
+ .h2-hero-description{font-size:1rem;margin-block:22px}
+ .h2-hero-actions{flex-direction:column;align-items:stretch}
+ .h2-hero-foot{display:block;margin-top:30px;padding-block:16px}
+ .h2-hero-foot span{display:block}
+ .h2-hero-foot span+span{margin-top:8px}
+ .h2-day-track{grid-template-columns:1fr;gap:22px}
+ .h2-day-track article{border-top:1px solid var(--line);padding-top:20px}
+ .h2-number{margin-bottom:12px}
+ .h2-routine-list summary{grid-template-columns:30px 1fr;gap:14px;padding-block:22px}
+ .h2-expand{grid-column:2;font-size:.9rem}
+ .h2-routine-body{padding-inline-start:44px}
+ .h2-passenger-grid{padding-block:24px}
+ .h2-section-intro h2,.h2-passenger-copy h2,.h2-planner h2,.h2-final h2{font-size:clamp(1.8rem,6vw,2.4rem)}
+ .h2-equipment-grid{grid-template-columns:1fr;gap:24px}
+ .h2-planner{padding-block:36px}
+ .h2-planner-disclosure>summary{padding:20px;font-size:1.1rem}
+ .h2-planner-disclosure>summary>span{display:block;margin:10px 0 0}
+ .h2-planner-disclosure form{padding:20px}
+ .h2-answer-grid{grid-template-columns:1fr}
+ .h2-answer-grid details{padding:20px}
+ .home-two #faq{padding-block:40px}
+ .h2-final>.container{flex-direction:column;align-items:flex-start}
+ .h2-final .btn{width:100%}
+}
+html[data-text=large] .h2-day-track{grid-template-columns:1fr}
+html[data-text=large] .h2-planner-heading{grid-template-columns:1fr}
+.h2-equipment-grid{align-items:stretch}
+.h2-equipment figure{display:flex;flex-direction:column;height:100%}
+.h2-equipment img{aspect-ratio:3/2;object-fit:contain}
+.h2-equipment figcaption{flex:1}
+
+/* Keep Home Page 2's enlarged-text layout consistent with shared rules. */
+html[data-text=large] .h2-day-track h3{min-height:0}
+html[data-text=large] .h2-routine-list summary{grid-template-columns:45px minmax(0,1fr);gap:14px}
+html[data-text=large] .h2-routine-list .h2-expand{grid-column:2}
+html[data-text=large] .h2-routine-body{padding-inline-start:59px}
+html[data-text=large] .h2-planner-disclosure>summary>span{display:block;margin:10px 0 0}
+html[data-text=large] .h2-final>.container{flex-wrap:wrap}
+@media(max-width:1200px){
+ html[data-text=large] .h2-answer-grid,html[data-text=large] .h2-equipment-grid{grid-template-columns:minmax(0,1fr)}
+ html[data-text=large] .h2-final>.container{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:639px){
+ html[data-text=large] .h2-hero h1{font-size:2.6rem}
+ html[data-text=large] .h2-routine-list summary{grid-template-columns:30px minmax(0,1fr)}
+ html[data-text=large] .h2-routine-body{padding-inline-start:44px}
+ html[data-text=large] .h2-planner-disclosure form{padding:16px}
+}
+
+/* Match step heights and remove the heading-side gap at every text size. */
+.h2-day>.container{grid-template-columns:minmax(0,1fr);gap:28px}
+.h2-day-heading h2 br{display:none}
+.h2-day-track{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;align-items:stretch}
+.h2-day-track article{display:flex;flex-direction:column;height:100%;min-width:0}
+.h2-day-track h3{min-height:2.7em;line-height:1.35}
+.h2-day-track article p{flex:1}
+.h2-equipment-grid{grid-auto-rows:1fr;align-items:stretch}
+.h2-equipment figcaption{display:flex;flex-direction:column}
+.h2-equipment figcaption h3{min-height:2.7em;line-height:1.35}
+.h2-equipment figcaption p{flex:1}
+html[data-text=large] .h2-day-track{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr}
+html[data-text=large] .h2-day-track h3{min-height:2.7em;line-height:1.35}
+@media(max-width:1024px){html[data-text=large] .h2-day-track{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:767px){.h2-day-track{grid-template-columns:minmax(0,1fr)}}
+
+/* Appointment-day hero with a vehicle background and readable text panel. */
+.h2-hero.page-header-background{background-image:url('../images/backgrounds/home-2-background.jpg');padding-block:40px;background-position:center 0px;background-size:cover}
+.h2-hero .page-header-content{max-width:1100px;margin-inline:auto;padding:36px;background:var(--black);color:var(--white);border:1px solid var(--white)}
+.h2-hero-foot{margin-top:30px}
+@media(max-width:767px){
+ .h2-hero.page-header-background{padding-block:30px;background-position:center top}
+ .h2-hero .page-header-content{padding:24px}
+}
+
+/* Avoid vertically centered gaps in the related image/text layout. */
+.h2-passenger-grid{align-items:start}

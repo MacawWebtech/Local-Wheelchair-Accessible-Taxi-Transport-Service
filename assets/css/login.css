@@ -1,0 +1,19 @@
+/* Login: balanced form and open journey guide, using shared page typography. */
+.login-hero{background-image:url('../images/backgrounds/login-background.jpg')}
+.login-page h2{font-size:var(--section-heading-size)}
+.login-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:stretch}
+.login-form-panel,.login-travel-panel{padding:30px;border:1px solid var(--line);height:100%;min-width:0}
+.login-form-panel>p:not(.eyebrow){margin-top:20px}
+#login-form{display:grid;gap:24px;margin-top:28px}
+.password-row{display:flex;gap:12px;align-items:stretch}.password-row input{min-width:0;flex:1;width:0}
+.password-row button{min-height:48px;padding:12px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:inherit;flex-shrink:0}
+.login-options{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center}
+.login-options>div{display:flex;align-items:center;gap:12px}.login-options input{width:24px;height:24px;accent-color:var(--primary)}
+.login-options label{padding-block:12px;cursor:pointer}.login-options button,.register-note button{background:var(--bg);color:var(--fg);border:0;text-decoration:underline;padding:12px 0;min-height:48px}
+.login-submit{width:100%}#login-errors,#login-status,#account-help{border:1px solid var(--line);padding:18px;overflow-wrap:anywhere}
+.login-travel-panel{background:var(--primary);color:var(--white);display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.login-travel-panel p:not(.eyebrow){margin-top:18px}.login-travel-panel :focus-visible{outline-color:var(--white);box-shadow:none}
+.login-guide{margin:28px 0 0;padding-inline-start:24px}.login-guide li{padding-block:18px;border-top:1px solid var(--white);padding-inline-start:10px}.login-guide h3{font-size:var(--card-heading-size)}
+.login-travel-actions{display:flex;flex-direction:column;gap:14px;align-items:flex-start}.login-travel-actions .white-btn:hover{background:var(--black);color:var(--white);border-color:var(--white);transform:none}
+@media(max-width:1024px){.login-layout{grid-template-columns:minmax(0,1fr)}.login-form-panel,.login-travel-panel{height:auto}}
+@media(max-width:639px){.login-form-panel,.login-travel-panel{padding:24px}.password-row{flex-direction:column}.password-row input{width:100%}.login-options{align-items:flex-start;flex-direction:column}.login-travel-actions,.login-travel-actions .btn{width:100%}}

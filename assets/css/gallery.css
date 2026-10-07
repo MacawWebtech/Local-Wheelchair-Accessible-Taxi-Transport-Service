@@ -1,0 +1,33 @@
+/* Fleet: distinct photo-led equipment rows and native dialog viewer. */
+.gallery-hero{background-image:url('../images/backgrounds/gallery-background.jpg')}
+.gallery-page h1,.gallery-page h2,.gallery-page h3{overflow-wrap:anywhere}
+.gallery-page h2{font-size:var(--section-heading-size)}
+.gallery-page .final-cta h2{font-size:clamp(2.5rem,4.8vw,5rem)}
+.fleet-filters{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:24px}
+.fleet-filters button{min-height:48px;padding:12px 20px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:inherit}
+.fleet-filters [aria-pressed=true]{background:var(--primary);color:var(--white);border-color:var(--primary);font-weight:700;text-decoration:underline;text-underline-offset:5px}
+#fleet-count{margin-bottom:24px}
+.fleet-views{border-top:1px solid var(--line)}
+.fleet-view{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;padding-block:32px;border-bottom:1px solid var(--line);align-items:center}
+.fleet-view figure{min-width:0}
+.fleet-photo-button{display:block;border:0;background:var(--bg);color:var(--fg);padding:0;width:100%;text-align:start;font:inherit}
+.fleet-photo-button img{width:100%;height:auto;object-fit:contain}
+.fleet-photo-button span{display:block;min-height:48px;padding-block:12px;font-weight:700;text-decoration:underline}
+.fleet-view-copy h3{font-size:var(--card-heading-size);line-height:1.35}
+.fleet-view-copy h3+p{margin-top:20px}
+.fleet-view-copy dl{margin:24px 0 0}
+.fleet-view-copy dl>div{display:grid;grid-template-columns:1fr 1.5fr;gap:20px;padding-block:16px;border-top:1px solid var(--line)}
+.fleet-view-copy dd{margin:0}
+.fleet-view-copy .text-link{margin-top:18px;min-height:48px}
+.fleet-check-section{background:var(--primary);color:var(--white)}
+.fleet-check-section :focus-visible{outline-color:var(--white);box-shadow:none}
+#fleet-photo-dialog{max-width:min(1100px,calc(100% - 60px));max-height:90vh;border-radius:0;overflow:auto}
+#fleet-photo-title{font-size:var(--card-heading-size);margin-bottom:20px}
+#fleet-full-photo{width:100%;height:auto;max-height:65vh;object-fit:contain}
+#fleet-photo-close{margin-top:20px}
+@media(max-width:1024px){.fleet-view{grid-template-columns:minmax(0,1fr);gap:24px}}
+@media(max-width:767px){.fleet-view-copy dl>div{grid-template-columns:minmax(0,1fr);gap:8px}.fleet-filters{gap:12px}.fleet-filters button{flex:1 1 140px}#fleet-photo-dialog{padding:20px}#fleet-photo-close{width:100%}}
+
+.fleet-check-section .master-split>div:first-child>p:not(.eyebrow){margin-top:24px;max-width:65ch}
+
+.fleet-view{align-items:start}

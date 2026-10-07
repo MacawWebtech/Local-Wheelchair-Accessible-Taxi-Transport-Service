@@ -1,0 +1,44 @@
+/* Appointment travel: photo feature, preparation lists and fare table. */
+.service-detail-page h1,.service-detail-page h2,.service-detail-page h3{overflow-wrap:anywhere}
+.detail-hero{background-image:url('../images/backgrounds/service-details-background.jpg')}
+.service-detail-page h2{font-size:var(--section-heading-size)}
+.service-detail-page .final-cta h2{font-size:clamp(2.5rem,4.8vw,5rem)}
+.detail-jump{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;border-bottom:1px solid var(--line);padding-block:16px}
+.detail-jump>span{font-family:Inter,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.08em}
+.detail-jump>a{min-height:48px;padding-block:10px}
+.detail-overview{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.detail-overview figure{min-width:0}
+.detail-overview img{width:100%;height:auto;object-fit:contain}
+.detail-overview figcaption{padding-top:12px;font-size:.9rem}
+.detail-overview h2~p{margin-top:22px}
+.detail-overview .btn{margin-top:26px}
+.detail-overview .text-link{display:block;margin-top:12px}
+.detail-prepare{border-block:1px solid var(--line)}
+.detail-prep-columns{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.detail-prep-columns h3{font-size:var(--card-heading-size);line-height:1.35;margin-bottom:22px}
+.detail-prep-columns dl{margin:0}
+.detail-prep-columns dl>div{border-top:1px solid var(--line);padding-block:20px}
+.detail-prep-columns dt{font-weight:700}
+.detail-prep-columns dd{margin:10px 0 0}
+.detail-table{width:100%;border-collapse:collapse;font-size:1rem}
+.detail-table caption{text-align:start;caption-side:top;color:var(--fg);padding-block:0 18px}
+.detail-table th,.detail-table td{text-align:start;padding:20px;border:1px solid var(--line);vertical-align:top}
+.detail-table thead{background:var(--primary);color:var(--white)}
+.detail-table th:first-child{width:30%}
+.detail-note{background:var(--primary);color:var(--white);padding-block:44px}
+.detail-note p:not(.eyebrow){max-width:960px;margin-top:22px}
+.detail-note a{margin-top:18px;min-height:48px}
+.detail-note :focus-visible{outline-color:var(--white)}
+@media(max-width:1024px){.detail-overview{grid-template-columns:minmax(0,1fr);gap:28px}}
+@media(max-width:767px){
+ .detail-prep-columns{grid-template-columns:minmax(0,1fr);gap:24px}
+ .detail-jump{gap:8px 20px}
+ .detail-jump>span{width:100%}
+ .detail-overview .btn{width:100%}
+ .detail-table th,.detail-table td{padding:14px 12px;overflow-wrap:anywhere}
+ .detail-table th:first-child{width:38%}
+ .detail-note{padding-block:34px}
+}
+
+/* Avoid vertically centered gaps in the related image/text layout. */
+.detail-overview{align-items:start}

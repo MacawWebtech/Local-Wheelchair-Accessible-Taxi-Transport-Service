@@ -1,0 +1,13 @@
+/* Page headings only: visible photography with a light black overlay. */
+.page-header-background{position:relative;isolation:isolate;color:var(--white);--fg:var(--white);--line:var(--white)}
+.page-header-background::before{content:"";position:absolute;inset:0;background:var(--black);opacity:.35;z-index:-1;pointer-events:none}
+.page-header-background .about-hero-panel,
+.page-header-background .page-header-content,
+.dashboard-heading.page-header-background>.container{background:transparent;color:var(--white);border-color:transparent}
+.page-header-background h1,.page-header-background h1 span,
+html[data-theme=dark] .page-header-background h1 span,
+.page-header-background .eyebrow,.page-header-background .breadcrumb-nav{color:var(--white)}
+.page-header-background h1,.page-header-background p,.page-header-background .breadcrumb-nav{text-shadow:0 1px 3px var(--black)}
+.page-header-background :focus-visible{outline-color:var(--white)}
+.page-header-background .btn.outline{background:transparent;color:var(--white);border-color:var(--white)}
+.page-header-background .btn.outline:hover,.page-header-background .btn.outline:focus-visible{background:var(--black);color:var(--white);border-color:var(--white)}
